@@ -58,7 +58,47 @@ namespace exercicio02
             {
                 Console.Write(x[i] * y[i] + " ");
             }
-            Console.Write("]");
+            Console.WriteLine("]");
+
+            Console.Write("Diferença entre x e y: [ ");
+            for(int i = 0;i < x.Length; i++)
+            {
+                bool contem = false;
+                int nX;
+                for (int j = 0;j < y.Length; j++)
+                {
+                    if (x[i] != y[j])
+                    {
+                        contem = false;
+                        nX = x[i];
+
+                        
+                    }
+                    else
+                    {
+                        contem = true;
+                        j = y.Length;
+                    }
+                    
+               
+                }
+                if (!contem)
+                {
+                    Console.Write(x[i] + " ");
+
+                }
+            }
+
+            Console.WriteLine("]");
+
+     
+
+
+
+
+
+
+
 
 
 
